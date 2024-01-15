@@ -27,8 +27,8 @@ const Barcelona = () => {
 		setIsMapModalOpen(false);
 	};
 	const toggleMapModal = () => {
-		setIsMapModalOpen(prevState => !prevState);
-	  };
+		setIsMapModalOpen((prevState) => !prevState);
+	};
 
 	return (
 		<section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
@@ -40,7 +40,16 @@ const Barcelona = () => {
 				>
 					<Image src="/folded-map.svg" alt="map" width={28} height={28} />
 				</div>
-				<h1 className="text-5xl font-semibold mb-20">Explore Barcelona</h1>
+				<h1 className="bold-52 lg:bold-88">Barcelona, Catalunya</h1>
+				<p className="regular-16 mt-6 mb-10 text-gray-30 xl:max-w-[700px] text-center">
+					A city on the northeastern coast of Spain. It is the capital and
+					largest city of the autonomous community of Catalonia, as well as the
+					second-most populous municipality of Spain. <br />
+					Has a rich cultural heritage and is today an important cultural centre
+					and a major tourist destination. Particularly renowned are the
+					architectural works of Antoni Gaudí and Lluís Domènech i Montaner,
+					which have been designated UNESCO World Heritage Sites.{" "}
+				</p>
 				{/* CityCard Section */}
 				<div className="flex h-[640px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[640px] xl:h-[640px]">
 					<CityCard backgroundImage="bg-bg-img-9" />

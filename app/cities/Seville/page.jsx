@@ -7,8 +7,10 @@ import {  Toaster } from 'react-hot-toast';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import TripButton from "@/components/AddToTrip";
+import { useState } from "react";
 
 const SevillePage = () => {
+	const [isMapModalOpen, setIsMapModalOpen] = useState(false);
   
 // Slider Settings
   const settings = {
@@ -20,20 +22,26 @@ const SevillePage = () => {
     autoplay: true,
   };
 
+  const closeMapModal = () => {
+		setIsMapModalOpen(false);
+	};
+	const toggleMapModal = () => {
+		setIsMapModalOpen((prevState) => !prevState);
+	};
   return (
     <section  className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
-
-    <div className="flex flex-col items-center justify-center min-h-screen py-8 ">
-    <div className="rounded-full bg-red-500 p-4 mb-10">
-              <Image
-                src="/folded-map.svg"
-                alt="map"
-                width={28}
-                height={28}
-              />
-            </div>
-      			<h1 className="text-5xl font-semibold mb-20">Explore Seville</h1>
-
+{isMapModalOpen && <Map closeModal={closeMapModal} />}
+			<div className="flex flex-col items-center justify-center min-h-screen py-8">
+				<div
+					className="rounded-full bg-red-500 p-4 mb-10 cursor-pointer "
+					onClick={toggleMapModal}
+				>
+					<Image src="/folded-map.svg" alt="map" width={28} height={28} />
+				</div>
+				<h1 className="bold-52 lg:bold-88">Seville, Andalusia</h1>
+				<p className="regular-16 mt-6 mb-10 text-gray-30 xl:max-w-[700px] text-center">
+				Seville is approximately 2,200 years old. The passage of the various civilizations instrumental in its growth has left the city with a distinct personality, and a large and well-preserved historical centre.
+				</p>
       {/* CityCard Section */}
       <div className="flex h-[640px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[640px] xl:h-[640px]">
         <CityCard backgroundImage="bg-bg-img-6" />

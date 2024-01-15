@@ -1,4 +1,4 @@
-import Camp from "@/components/City";
+import City from "@/components/City";
 import Features from "@/components/Features";
 import Guide from "@/components/Guide";
 import Hero from "@/components/Hero";
@@ -9,9 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   return (
     <>
-      {/* <PackagesList /> */}
       <Hero />
-      <Camp />
+      <City />
       <Guide />
       <Features />
 
