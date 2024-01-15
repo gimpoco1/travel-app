@@ -17,13 +17,12 @@ const Map = () => {
 				center: position,
 				zoom: 8,
 			};
-            const map = new Map(mapRef.current, mapOptions);
-
+			const map = new Map(mapRef.current, mapOptions);
 
 			const marker = new Marker({
 				map: map,
-				position: position
-			  });
+				position: position,
+			});
 		};
 		initMap();
 	}, []);

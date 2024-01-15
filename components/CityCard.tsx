@@ -9,13 +9,13 @@ interface CityCardProps {
   peopleJoined?: string;
   onClick: () => void;
   className?: string;
-  isMainPage: boolean; // new prop
+  isMainPage: boolean; 
 
 }
 
 const CityCard = ({ backgroundImage, title, subtitle, peopleJoined, onClick, isMainPage }: CityCardProps) => {
   return (
-    <div className={` h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}
+    <div className={` h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-5xl 2xl:rounded-5xl`}
     onClick={onClick}>
      <div className="flex h-full flex-col items-start justify-between p-6 lg:px-10 lg:py-10 ">
      {isMainPage && (
