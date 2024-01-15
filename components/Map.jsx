@@ -28,7 +28,7 @@ const Map = () => {
 	}, []);
 
 	// setup map
-	return <div className=" h-[600px]  rounded-5xl" ref={mapRef} />;
+	return <div className=" h-[600px] rounded-5xl" ref={mapRef} />;
 };
 
 export default Map;

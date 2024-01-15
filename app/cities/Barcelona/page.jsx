@@ -31,7 +31,7 @@ const Barcelona = () => {
 	};
 
 	return (
-		<section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
+		<section className="max-container xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
 			{isMapModalOpen && <Map closeModal={closeMapModal} />}
 			<div className="flex flex-col items-center justify-center min-h-screen py-8">
 				<div
@@ -52,7 +52,7 @@ const Barcelona = () => {
 				</p>
 				{/* CityCard Section */}
 				<div className="flex h-[640px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[640px] xl:h-[640px]">
-					<CityCard backgroundImage="bg-bg-img-9" />
+					<CityCard backgroundImage="max-container bg-bg-img-9" />
 				</div>
 
 				{/* Hotels Section */}

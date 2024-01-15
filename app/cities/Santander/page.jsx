@@ -31,7 +31,7 @@ const SantanderPage = () => {
 	};
 
 	return (
-		<section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
+		<section className="max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
 			{isMapModalOpen && <Map closeModal={closeMapModal} />}
 			<div className="flex flex-col items-center justify-center min-h-screen py-8">
 				<div
