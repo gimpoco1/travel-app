@@ -2,18 +2,10 @@
 
 This is a travel app that helps users plan their trips and explore new destinations.
 
-## Features
-
-- User registration and authentication
-- Search for flights, hotels, and attractions
-- Save favorite destinations and itineraries
-- View weather forecasts for selected locations
-- Get recommendations for popular destinations
-- Share travel plans with friends
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/travel-app.git`
+1. Clone the repository: `git clone https://github.com/gimpoco1/travel-app.git`
 2. Install dependencies: `npm install`
 3. Set up the necessary environment variables (e.g., API keys)
 4. Start the app: `npm start`
@@ -29,9 +21,8 @@ This is a travel app that helps users plan their trips and explore new destinati
 
 ## Technologies Used
 
-- Front-end: HTML, CSS, JavaScript, React
-- Back-end: Node.js, Express
-- Database: MongoDB
+- Front-end: NextJS, Typescript, TailwindCSS
+- Back-end: Node.js
 
 ## Contributing
 
